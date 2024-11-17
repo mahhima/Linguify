@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"> <!-- Centering all content within the LinearLayout -->
+
+    <TextView
+        android:id="@+id/tvTranslationPrompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Translate the following phrase to :"
+        android:textSize="24sp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/tvWordPrompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:padding="16dp"/>
+
+    <EditText
+        android:id="@+id/etTranslationInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="#BBB8BC"
+        android:hint="Enter the English translation"
+        android:padding="12dp" /> <!-- Optional margin for spacing -->
+
+    <Button
+        android:id="@+id/btnSubmitTranslation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"/>
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:progress="0"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp" />
+</LinearLayout>

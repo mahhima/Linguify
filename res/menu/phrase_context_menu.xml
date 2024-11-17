@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/option_update"
+        android:title="Update" />
+    <item
+        android:id="@+id/option_delete"
+        android:title="Delete" />
+    <item
+        android:id="@+id/option_favorites"
+        android:title="Add to Favorites" />
+</menu>

@@ -1,0 +1,119 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/button_text_color">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <!-- Profile Photo Upload Section -->
+        <ImageView
+            android:id="@+id/ivProfilePhoto"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginBottom="20dp"
+            android:background="@mipmap/ic_launcher_round"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_launcher_foreground" />
+
+        <Button
+            android:id="@+id/btnUploadPhoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Upload Photo"
+            android:textColor="@color/button_text_color"
+            android:background="@drawable/button_square"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Name Fields Side by Side -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+
+            <!-- First Name Field -->
+            <EditText
+                android:id="@+id/etFirstName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="First Name"
+                android:inputType="textPersonName"
+                android:padding="10dp"
+                android:background="#74E6E3EB"
+                android:layout_marginRight="10dp"/>
+
+            <!-- Last Name Field -->
+            <EditText
+                android:id="@+id/etLastName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Last Name"
+                android:inputType="textPersonName"
+                android:padding="10dp"
+                android:background="#74E6E3EB"/>
+        </LinearLayout>
+
+        <!-- Email Field -->
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:layout_marginBottom="10dp"
+            android:padding="10dp"
+            android:background="#74E6E3EB" />
+
+        <!-- Password Field -->
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:layout_marginBottom="10dp"
+            android:padding="10dp"
+            android:background="#74E6E3EB" />
+
+        <!-- Contact Number Field -->
+        <EditText
+            android:id="@+id/etContact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Contact Number"
+            android:inputType="phone"
+            android:layout_marginBottom="10dp"
+            android:padding="10dp"
+            android:background="#74E6E3EB" />
+
+        <!-- Date of Birth Button -->
+        <EditText
+            android:id="@+id/etDOB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Date of Birth"
+            android:inputType="none"
+            android:focusable="false"
+            android:layout_marginBottom="20dp"
+            android:padding="10dp"
+            android:background="#74E6E3EB" />
+
+        <!-- Save Button -->
+        <Button
+            android:id="@+id/btnSaveProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save Profile"
+            android:textColor="@color/button_text_color"
+            android:background="@drawable/button_square" />
+
+    </LinearLayout>
+</ScrollView>

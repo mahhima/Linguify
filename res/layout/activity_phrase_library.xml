@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/background_color"
+        android:padding="16dp">
+
+        <!-- Header TextView -->
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Phrase Library"
+            android:textColor="@color/text_color"
+            android:textSize="24sp"
+            android:gravity="center"
+            android:layout_marginTop="24dp"/>
+
+        <!-- Language Selection Spinner (dropdown) -->
+        <Spinner
+            android:id="@+id/languageSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <!-- Horizontal ScrollView for Category Buttons -->
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp">
+
+            <!-- Linear Layout to hold multiple category buttons -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- Greetings category -->
+                <TextView
+                    android:id="@+id/textViewGreetings"
+                    android:layout_width="130dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/rounded_rectangle"
+                    android:padding="10dp"
+                    android:textAlignment="center"
+                    android:text="Greetings"
+                    android:textColor="@color/text_color" />
+
+                <!-- Restaurants category -->
+                <TextView
+                    android:id="@+id/textViewRestaurants"
+                    android:layout_width="130dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/rounded_rectangle"
+                    android:padding="10dp"
+                    android:textAlignment="center"
+                    android:text="Restaurants"
+                    android:textColor="@color/text_color" />
+
+                <!-- Directions category -->
+                <TextView
+                    android:id="@+id/textViewDirections"
+                    android:layout_width="130dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/rounded_rectangle"
+                    android:padding="10dp"
+                    android:textAlignment="center"
+                    android:text="Directions"
+                    android:textColor="@color/text_color" />
+
+                <!-- Shopping category -->
+                <TextView
+                    android:id="@+id/textViewShopping"
+                    android:layout_width="130dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/rounded_rectangle"
+                    android:padding="10dp"
+                    android:textAlignment="center"
+                    android:text="Shopping"
+                    android:textColor="@color/text_color" />
+
+                <!-- Holidays category -->
+                <TextView
+                    android:id="@+id/textViewHolidays"
+                    android:layout_width="130dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/rounded_rectangle"
+                    android:padding="10dp"
+                    android:textAlignment="center"
+                    android:text="Holidays"
+                    android:textColor="@color/text_color" />
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <!-- EditText to add or update a phrase -->
+        <EditText
+            android:id="@+id/editTextPhrase"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Enter new or updated phrase"
+            android:inputType="text"
+            android:textColorHint="#7C74C7"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <!-- Button to add or update a phrase -->
+        <Button
+            android:id="@+id/buttonAddPhrase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add or Update Phrase"
+            android:layout_marginTop="8dp"
+            android:layout_gravity="center" />
+
+        <!-- ListView to display phrases -->
+        <ListView
+            android:id="@+id/listViewPhrases"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="16dp"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="20dp"
+            android:choiceMode="singleChoice" />
+    </LinearLayout>
+
+    <!-- Navigation Drawer -->
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/drawer_menu" />
+</androidx.drawerlayout.widget.DrawerLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="Theme.Material3.DayNight">
+        <item name="colorPrimary">@color/primary_color</item>
+        <item name="colorPrimaryVariant">@color/highlight_color</item>
+        <item name="colorOnPrimary">@color/button_text_color</item>
+        <item name="android:windowBackground">@color/background_color</item>
+        <item name="android:textColor">@color/text_color</item>
+    </style>
+
+    <style name="ButtonStyle">
+        <item name="android:background">@color/primary_color</item>
+        <item name="android:textColor">@color/button_text_color</item>
+    </style>
+
+    <style name="CategoryButtonStyle">
+        <item name="android:background">@color/category_button_color</item>
+        <item name="android:textColor">@color/text_color</item>
+    </style>
+
+</resources>

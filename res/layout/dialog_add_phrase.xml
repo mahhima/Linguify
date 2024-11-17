@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editTextPhrase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Phrase" />
+
+    <EditText
+        android:id="@+id/editTextMeaning"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Meaning" />
+
+    <EditText
+        android:id="@+id/editTextExample"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Example Sentence" />
+
+    <EditText
+        android:id="@+id/editTextCulturalInsight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Cultural Insight" />
+
+    <Button
+        android:id="@+id/buttonAddPhrase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:text="Add Phrase" />
+</LinearLayout>

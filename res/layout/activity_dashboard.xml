@@ -1,0 +1,82 @@
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Main Content -->
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical">
+
+<!-- Toolbar (Optional) -->
+<androidx.appcompat.widget.Toolbar
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="?attr/colorPrimary"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+    app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+<!-- Your existing content here -->
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="32dp"
+    android:background="@color/background_color">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="316dp"
+        android:layout_height="194dp"
+        android:layout_marginBottom="40dp"
+        android:contentDescription="LOGO"
+        app:srcCompat="@drawable/logowithoutbg" />
+
+    <Button
+        android:id="@+id/btnLearningModule"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:text="Learn"
+        android:background="@drawable/button_square"
+        android:textSize="24sp"
+        android:textColor="@color/button_text_color"
+        android:layout_marginBottom="30dp" />
+
+    <Button
+        android:id="@+id/btnPracticeModule"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:background="@drawable/button_square"
+        android:text="Practice"
+        android:textSize="24sp"
+        android:textColor="@color/button_text_color"
+        android:layout_marginBottom="30dp" />
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:background="@drawable/button_square"
+        android:text="Logout"
+        android:textSize="24sp"
+        android:textColor="@color/button_text_color" />
+</LinearLayout>
+</LinearLayout>
+
+
+<com.google.android.material.navigation.NavigationView
+android:id="@+id/navView"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    android:background="@android:color/white"
+    android:textColor="@color/text_color"
+    app:menu="@menu/drawer_menu"
+    app:headerLayout="@layout/nav_header"
+    app:itemTextColor="@color/text_color" />
+    </androidx.drawerlayout.widget.DrawerLayout>

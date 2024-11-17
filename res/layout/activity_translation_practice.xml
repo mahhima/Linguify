@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tvTranslationPrompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Translate the following phrase:"
+        android:textSize="24sp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/tvPhraseToTranslate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phrase will be here"
+        android:textSize="30sp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center" />
+
+    <EditText
+        android:id="@+id/etTranslationInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="#E5E3E9"
+        android:hint="Type your translation here"
+        android:padding="10dp" />
+
+    <Button
+        android:id="@+id/btnSubmitTranslation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:layout_gravity="center" />
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"
+        android:gravity="center" />
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:progress="0"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp" />
+</LinearLayout>
